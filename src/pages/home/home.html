@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content>
+  
   <ion-card *ngIf="dish">
     <img src="{{BaseURL + dish.image }}" />
 
@@ -44,7 +45,7 @@
           {{ promotion.description }}
         </p>
       </ion-card-content>
-    </ion-card>
+  </ion-card>
   
     <div [hidden]="promotion || promotionErrMess">
       <ion-spinner>
